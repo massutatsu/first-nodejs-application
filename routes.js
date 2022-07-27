@@ -10,7 +10,6 @@ const requestHandler = (req, res) => {
         return res.end()
     }
     if (url === '/users') {
-        fs.writeFileSync('message.txt', 'DUMMY')
         res.setHeader('Content-Type', 'text/html')
         res.write('<html>')
         res.write('<head><title>My first Page</title></head>')
